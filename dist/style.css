@@ -579,7 +579,7 @@
         background: #191F26;
       }
 
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 600px) {
 
        #home{
            height:90vh;
@@ -680,3 +680,65 @@
     }
 
     }
+
+    @media only screen and (min-width: 1600px) {
+      #navbar h1 {
+        font-size: 50px;
+      }
+      #home h1 {
+        font-size: 80px;
+      }
+      .hero .button {
+        padding: 15px;
+        height: 60px;
+        min-width: 250px;
+        font-size: 28px;
+      }
+      #about .logo h1 {
+        font-size: 60px;
+      }
+
+      hr {
+        border: 4px solid #c90095;
+        width: 400px;
+      }
+      #about .container .right-section, 
+      #about .container .left-section {
+         width: 600px;
+         height: 520px;
+      }
+      #about .container .right-section .title,
+      #about .container .left-section .title {
+        font-size: 50px;
+    }
+    #about .container .right-section .description, 
+    #about .container .left-section .description {
+      font-size: 26px;
+  }
+  .logo h1 {
+    font-size: 60px;
+    }
+    #projects .project-container {
+      width: 100%;
+    }
+    #projects .project-container .image-container .image {
+      width: 100%;
+      height: 100%;
+    }
+    #projects .project-container h2 {
+      font-size: 50px;
+    }
+    #projects .project-container .description-container .project-description {
+      font-size: 27px;
+    }
+    #projects .project-container .description-container .visit-buttons .button {
+      padding: 15px;
+      height: 60px;
+      min-width: 250px;
+      font-size: 28px;
+    }
+    #contact .logo h1 {
+      text-align: center;
+      font-size: 60px;
+  }
+  }
