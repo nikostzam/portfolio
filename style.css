@@ -582,6 +582,12 @@ hr {
 
     @media only screen and (max-width: 600px) {
 
+      #about .logo h1,
+      #projects .logo h1,
+      #contact .logo h1{
+        font-size: 35px;
+      }
+
      #home{
          height:100vh;
          margin-top: 30px;
@@ -605,9 +611,7 @@ hr {
          box-shadow: none;
          min-width: 200px;
      }
-     #about .logo h1{
-         font-size: 40px;
-     }
+    
      hr {
       width: 300px;
     }
@@ -642,7 +646,6 @@ hr {
       font-size: 22px !important;
   }
    #projects .logo h1 {
-       font-size: 40px;
        margin-top: 30px;
    }
   #projects .project-container {
@@ -667,12 +670,17 @@ hr {
       text-align: center;
       margin: 10px auto;
   }
+
+  #projects .project-container .description-container .project-description {
+    font-size: 20px;
+  }
   .visit-buttons{
       display: flex;
   }
 
   #contact {
       height: 100%;
+      width: 100%;
   }
 
   #contact .contact-container {
@@ -695,12 +703,16 @@ hr {
     font-size: 20px;
   }
   .fa-2x {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 
   .social-media-list {
       width: 110%;
       margin: auto;
+  }
+
+  [type="submit"] {
+    padding: 5px 0;
   }
 
   }
@@ -726,8 +738,8 @@ hr {
     text-align: center;
    }
    #projects .project-container .image-container {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     justify-self: center;
     }
     #projects .project-container .description-container{
@@ -736,7 +748,6 @@ hr {
 
     #contact .contact-container {
       grid-template-columns: 1fr;
-      padding: 20px;
       width: 80%;
       margin: 40px auto;
     }
@@ -810,4 +821,3 @@ hr {
   font-size: 20px;
 }
 }
-  
