@@ -249,13 +249,14 @@ hr {
     }
     
     #projects .project-container .image-container .image {
+      object-fit: cover;
       width: 90%;
       height: 90%;
       border-radius: 50%;
       -webkit-transition: .4s;
       transition: .4s;
-      -webkit-filter: grayscale(100%);
-              filter: grayscale(100%);
+      -webkit-filter: grayscale(60%);
+              filter: grayscale(60%);
     }
     
     #projects .project-container .image-container .image:hover {
@@ -283,7 +284,7 @@ hr {
     
     #projects .project-container .description-container .project-title {
       font-size: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     
     #projects .project-container .description-container .project-description {
@@ -578,6 +579,12 @@ hr {
     
     [type="submit"]:hover {
       background: #191F26;
+    }
+
+    .icons {
+      font-size: 25px;
+      margin-bottom: 10px;
+      color: #bf008d;
     }
 
     @media only screen and (max-width: 600px) {
