@@ -29,6 +29,14 @@ html {
   z-index: -1;
 }
 
+.menu-img {
+  display: none;
+}
+
+.nav-links {
+  display: none;
+}
+
 #navbar {
   width: 100%;
   position: fixed;
@@ -722,6 +730,66 @@ hr {
     padding: 5px 0;
   }
 
+  .menu-img {
+    display: block;
+    width: 30px;
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    z-index: 3;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+
+  .menu-img:hover {
+    background-color: #e4e4e4;
+    border-radius: 50%;
+    transition: 0.4s ease;
+  }
+
+  .nav-links {
+    display: block;
+    position: absolute;
+    list-style-type: none;
+    background-color: #F200B3;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-700px);
+    transition: all 0.4s ease;
+  }
+
+    .list-item {
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    .list-item a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.4s ease;
+      padding: 10px 15px;
+    }
+
+    .list-item a:hover {
+      background-color: #fff;
+      color: #191F26;
+      font-weight: bold;
+    }
+
+    .nav-links.active {
+      transform: translateX(0);
+      transition: all 0.6s ease;
+      opacity: 0.97;
+    }
   }
 
   @media only screen and (max-width: 1000px) {
