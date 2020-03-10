@@ -263,8 +263,8 @@ hr {
       border-radius: 50%;
       -webkit-transition: .4s;
       transition: .4s;
-      -webkit-filter: grayscale(60%);
-              filter: grayscale(60%);
+      -webkit-filter: grayscale(30%);
+              filter: grayscale(30%);
     }
     
     #projects .project-container .image-container .image:hover {
